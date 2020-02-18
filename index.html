@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .story_img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+
+        .story_img>img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="story_img">
+        <img src="../../../CSS/img/毛玻璃.jpeg" title='nihao1'alt="" data-viewer="../../../CSS/img/毛玻璃.jpeg">
+    </div>
+    <div class="story_img">
+        <img src="../../../CSS/img/毛玻璃.jpeg" alt="" data-viewer="../../../CSS/img/毛玻璃.jpeg">
+    </div>
+    <div class="story_img">
+        <img src="../../../CSS/img/毛玻璃.jpeg" alt=" " data-viewer="../../../CSS/img/毛玻璃.jpeg">
+    </div>
+    <script src="./jquery.js"></script>
+    <script src="./jquery_mousewheel.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $(".story_img").Viewer({
+            imgTitleClass: "",
+            imgSelector: "story_img",
+            prevBgImg: "https://imgs.wbp5.com/api/secrecymaster/html_up/2018/10/20181009152904076.png",
+            nextBgImg: "https://imgs.wbp5.com/api/secrecymaster/html_up/2018/10/20181009152928779.png",
+            closeBgImg: "https://www.fx110.com/images/icons/closer.gif"
+        })
+
+    </script>
+</body>
+
+</html>
